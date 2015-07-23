@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 对应控件状态变为按压 -->
+    <item android:state_pressed="true" android:mipmap="@mipmap/experience_down.jpeg"></item>
+    <!-- 对应没有按压的时候显示的图片 -->
+    <item  android:state_pressed="false" android:mipmap="@mipmap/experience_up.jpeg"></item>
+
+
+
+
+    </selector>

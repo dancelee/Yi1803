@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+   
+    
+    <HorizontalScrollView
+        android:id="@+id/hScrollViewId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="vertical" >
+
+            <!-- 模块布局 -->
+            <RadioGroup
+                android:id="@+id/modelLayoutId"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+                
+                <RadioButton
+                    android:id="@+id/title1Id"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="健康咨询"
+                    android:textColor="@drawable/text_color"
+                    android:textSize="20sp"
+                   android:button="@null"
+                    android:gravity="center"/>
+                
+                <RadioButton 
+                    android:id="@+id/title2Id"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="健康知识"
+                     android:textColor="@drawable/text_color"
+                    android:textSize="20sp"
+                     android:button="@null"
+                    android:gravity="center"/>
+                
+                <RadioButton 
+                    android:id="@+id/title3Id"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="食疗大全"
+                     android:textColor="@drawable/text_color"
+                    android:textSize="20sp"
+                     android:button="@null"
+                    android:gravity="center"/>
+                
+                <RadioButton
+                    android:id="@+id/title4Id"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="健康食谱"
+                    android:gravity="center"
+                     android:button="@null"
+                     android:textColor="@drawable/text_color"
+                    android:textSize="20sp"
+                    />
+                
+                <RadioButton 
+                    android:id="@+id/title5Id"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="书籍"
+                    android:textColor="@drawable/text_color"
+                    android:textSize="20sp"
+                     android:button="@null"
+                    android:gravity="center"/>
+                 
+                <RadioButton 
+                    android:id="@+id/title6Id"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="病状查找"
+                     android:button="@null"
+                     android:textColor="@drawable/text_color"
+                    android:textSize="20sp"
+                    
+                    android:gravity="center"/>
+                 
+                <RadioButton 
+                    android:id="@+id/title7Id"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="项目查询"
+                    android:button="@null"
+                     android:textColor="@drawable/text_color"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+                
+            </RadioGroup>
+            
+            <!-- 指示器 -->
+            <View 
+                android:id="@+id/indicatorId"
+                android:layout_width="150dp"
+                android:layout_height="8dp"
+                android:background="#f00"/>
+            
+            <!-- 底边线 -->
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f00"/>
+            
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    
+  
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    
+     <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@id/hScrollViewId"/>
+
+</LinearLayout>
